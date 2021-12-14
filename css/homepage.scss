@@ -1,0 +1,14 @@
+@import 'sass/helpers/variables';
+@import 'sass/helpers/functions';
+@import 'sass/helpers/mixins';
+
+@import 'sass/layouts/header';
+@import 'sass/layouts/grid';
+@import 'sass/components/buttons';
+@import 'sass/pages/global';
+@import 'sass/layouts/footer';
+div{
+    background-color: black;
+    color:white;
+    width: 100%;
+}
