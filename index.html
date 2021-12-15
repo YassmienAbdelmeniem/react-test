@@ -12,10 +12,96 @@
     <div id="app"></div>
 
     <script type="text/babel">
-        // const name ="yassmien";
-        const ele = <p className = "test bin"> hello react </p>;
-        const app = document.getElementById("app");
-        ReactDOM.render(ele,app);
+        // // const name ="yassmien";
+        // const ele = <p className = "test bin"> hello react </p>;
+        // const app = document.getElementById("app");
+        // ReactDOM.render(ele,app);
+
+        // create component
+            // by traditional function
+                // function App(){
+                //     return(
+                //             <p> hello react component </p>
+                //         )
+                // }
+                // ReactDOM.render(<App />, document.getElementById("app"));
+
+            // by react component
+                // class App extends React.Component{
+                //     render(){
+                //         return(
+                //             <p> hello react component </p>
+                //         )
+                //     }
+                // }
+                // ReactDOM.render(<App />, document.getElementById("app"));
+
+
+        // Props (pass dynamic data from parent to child)
+        // state (holds data belongs to a component)
+            // // parent component
+            //     class App extends React.Component{
+            //         state = {
+            //             name : "app",
+            //             title : "app component",
+            //         }
+
+            //         render(){
+            //             return(
+            //                 <div>
+            //                     <p>
+            //                         name {this.state.name} 
+            //                         and title {this.state.title} 
+            //                     </p>
+            //                     <Header name="Header" title="hello header"/>
+            //                     <Footer name= "Footer" />
+            //                 </div>
+            //             )
+            //         }
+            //     }
+            // // childs components
+            //     class Header extends React.Component{
+            //         state = {
+            //             name : "header",
+            //             title : "header component",
+            //         }
+            //         render(){
+            //             return(
+            //                 <header> 
+            //                     name {this.state.name} 
+            //                     and title {this.state.title} 
+            //                     and header name {this.props.name }
+            //                     {this.props.title} 
+            //                 </header>
+            //             )
+            //         }
+            //     }
+            //     class Footer extends React.Component{
+            //         render(){
+            //             return(
+            //                 <footer> {this.props.name} </footer>
+            //             )
+            //         }
+            //     }
+            // ReactDOM.render(<App />, document.getElementById("app"));
+
+        // pass a state data of current copmonent as a props to another component
+            // class App extends React.Component{
+            //     state = {
+            //         name : "app component"
+            //     }
+            //     render(){
+            //         return(
+            //             <Header name={this.state.name} />
+            //         )
+            //     }
+            // }
+            // function Header(props){
+            //     return (
+            //         <p> {props.name} </p>
+            //     )
+            // }
+            // ReactDOM.render(<App />, document.getElementById("app"));
     </script>
     
     <!-- react cdn links -->
